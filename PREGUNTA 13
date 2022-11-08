@@ -1,0 +1,10 @@
+import datetime
+print("Ingrese el día: ")
+Agno = int(input("Agno: "))
+Dia = int(input("Día: "))
+Mes = int(input("Mes: "))
+Horas = int(input("Hora: "))
+Mins = int(input("Mins: "))
+Segs = int(input("Segs: "))
+
+print(datetime.datetime(Agno, Mes , Dia , Horas , Mins, Segs) + datetime.timedelta(hours=00, minutes=45, seconds=0))
