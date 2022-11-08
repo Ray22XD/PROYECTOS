@@ -1,0 +1,9 @@
+import datetime
+Horas1 = int(input("Hora 1: "))
+Mins1 = int(input("Mins 1: "))
+Segs1 = int(input("Segs 1: "))
+Horas2 = int(input("Hora 2: "))
+Mins2 = int(input("Mins 2: "))
+Segs2 = int(input("Segs 2: "))
+horita = datetime.datetime(2020, 10 , 10 , Horas1 , Mins1, Segs1) + datetime.timedelta(hours=Horas2, minutes=Mins2, seconds=Segs2) 
+print(datetime.time(horita.hour, horita.minute, horita.second))
