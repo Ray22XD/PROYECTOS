@@ -13,5 +13,5 @@ descuento = ( 0.15 if unidades > 50 else 0.05) * compra
 
 print ( f"Precio = {precio}\n" )
 print ( f"Compra = {compra}\n" )
-print ( f"Descuento = {precio}\n" )
+print ( f"Descuento = {descuento}\n" )
 print ( f"Total = {compra - descuento}\n" )
