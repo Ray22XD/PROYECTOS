@@ -2,19 +2,19 @@ import os
 
 os.system("cls")
 
-unidades = int(input("unidades : "))
+unidades = float(input("unidades : "))
+preunit=20
 
-precio = 20
+IMPORTEDECOMPRA= (preunit*unidades)
+descuento=(IMPORTEDECOMPRA * 0.14)*IMPORTEDECOMPRA
+descuento = ( 0.12 if IMPORTEDECOMPRA <= 500 else 0.14) * IMPORTEDECOMPRA
 
-if unidades >=1 and unidades <= 50 : caramelos = 5
-elif unidades <= 51 and unidades <= 100 : caramelos = 10
-else : caramelos = 15
+if IMPORTEDECOMPRA >= 700 : descuento= 0.16* IMPORTEDECOMPRA
+CARAMELO = 10
+if unidades <= 50 : CARAMELO= 5
+elif unidades >100  : CARAMELO = 15 
 
-compra = unidades * precio
-descuento = ( 0.15 if unidades > 50 else 0.05) * compra
-
-
-print ( f"Precio = {precio}\n" )
-print ( f"Compra = {compra}\n" )
-print ( f"Descuento = {precio}\n" )
-print ( f"Total = {compra - descuento} mas {caramelos} caramelos \n" )
+print ( f"IMPORTEDECOMPRA = {IMPORTEDECOMPRA}\n" )
+print ( f"DESCUENTO = {descuento}\n" )
+print ( f"TOTAL A PAGAR = {IMPORTEDECOMPRA - descuento}\n")
+print ( f"CARAMELO = {CARAMELO}\n" )
